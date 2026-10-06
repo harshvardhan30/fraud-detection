@@ -1,0 +1,189 @@
+{
+  "model_version": "fraud-xgb-v1.0.0",
+  "created_utc": "2026-10-02T05:49:33+00:00",
+  "algorithm": "XGBoost",
+  "imbalance_strategy": "none (spw=1)",
+  "scale_pos_weight": 1.0,
+  "best_iteration": 282,
+  "data_file": "transactions_synthetic.csv",
+  "data_sha256": "9f767466f79eeef2",
+  "windows": {
+    "train": [
+      "2026-02-01",
+      "2026-05-01"
+    ],
+    "valid": [
+      "2026-05-01",
+      "2026-06-01"
+    ],
+    "test": [
+      "2026-06-01",
+      "2026-07-01"
+    ]
+  },
+  "features": [
+    "hour",
+    "day_of_week",
+    "is_night",
+    "is_weekend",
+    "log_amount",
+    "is_round_1000",
+    "ends_in_999",
+    "device_missing",
+    "dev_is_new",
+    "dev_age_days_cap30",
+    "dev_secs_since_last",
+    "dev_cnt_10m",
+    "dev_cnt_1h",
+    "dev_cnt_24h",
+    "dev_cnt_30d",
+    "dev_amt_sum_1h",
+    "dev_fail_cnt_24h",
+    "dev_amt_ratio_prior_mean",
+    "dev_merchant_seen_30d",
+    "mer_age_days_cap30",
+    "mer_cnt_1h",
+    "mer_cnt_7d",
+    "mer_amt_ratio_prior_mean",
+    "service_type",
+    "merchant_type",
+    "mcc_code",
+    "issuer_bank",
+    "merchant_state"
+  ],
+  "thresholds": {
+    "block": 0.25217676162719727,
+    "review": 0.0031068441458046436
+  },
+  "threshold_policy": "block = max-F1 on validation; review band = [review, block) reaching 90% validation recall",
+  "test_bootstrap_95ci": {
+    "xgb_pr_auc": [
+      0.8356618624231079,
+      0.9127888210903469
+    ],
+    "lr_pr_auc": [
+      0.7553318892720912,
+      0.8603513200039049
+    ],
+    "diff_pr_auc": [
+      0.03413030121150216,
+      0.09953530197458502
+    ],
+    "xgb_recall": [
+      0.6746178634574802,
+      0.798515625
+    ],
+    "xgb_precision": [
+      0.8342987804878049,
+      0.9331371934848756
+    ]
+  },
+  "metrics": {
+    "xgboost": {
+      "valid": {
+        "n": 15189,
+        "n_fraud": 185,
+        "fraud_rate": 0.012179867009019685,
+        "threshold": 0.25217676162719727,
+        "precision": 0.8601398601398601,
+        "recall": 0.6648648648648648,
+        "f1": 0.75,
+        "pr_auc": 0.7821631122322924,
+        "roc_auc": 0.9795917485067044,
+        "confusion_matrix": {
+          "tn": 14984,
+          "fp": 20,
+          "fn": 62,
+          "tp": 123
+        },
+        "fraud_amount_recall": 0.8017401774721298
+      },
+      "test": {
+        "n": 15549,
+        "n_fraud": 184,
+        "fraud_rate": 0.01183355842819474,
+        "threshold": 0.25217676162719727,
+        "precision": 0.8888888888888888,
+        "recall": 0.7391304347826086,
+        "f1": 0.8071216617210683,
+        "pr_auc": 0.8767515314454594,
+        "roc_auc": 0.9956337808967302,
+        "confusion_matrix": {
+          "tn": 15348,
+          "fp": 17,
+          "fn": 48,
+          "tp": 136
+        },
+        "fraud_amount_recall": 0.7907197241297919
+      }
+    },
+    "logreg": {
+      "valid": {
+        "n": 15189,
+        "n_fraud": 185,
+        "fraud_rate": 0.012179867009019685,
+        "threshold": 0.9396052934230049,
+        "precision": 0.7309941520467836,
+        "recall": 0.6756756756756757,
+        "f1": 0.702247191011236,
+        "pr_auc": 0.7517080551115398,
+        "roc_auc": 0.9777421516424449,
+        "confusion_matrix": {
+          "tn": 14958,
+          "fp": 46,
+          "fn": 60,
+          "tp": 125
+        },
+        "fraud_amount_recall": 0.7844966852246603
+      },
+      "test": {
+        "n": 15549,
+        "n_fraud": 184,
+        "fraud_rate": 0.01183355842819474,
+        "threshold": 0.9396052934230049,
+        "precision": 0.7433155080213903,
+        "recall": 0.7554347826086957,
+        "f1": 0.7493261455525606,
+        "pr_auc": 0.8115348972935965,
+        "roc_auc": 0.9855360149407886,
+        "confusion_matrix": {
+          "tn": 15317,
+          "fp": 48,
+          "fn": 45,
+          "tp": 139
+        },
+        "fraud_amount_recall": 0.7121203102744362
+      }
+    },
+    "xgboost_test_block_or_review": {
+      "n": 15549,
+      "n_fraud": 184,
+      "fraud_rate": 0.01183355842819474,
+      "threshold": 0.0031068441458046436,
+      "precision": 0.2395693135935397,
+      "recall": 0.967391304347826,
+      "f1": 0.38403451995685006,
+      "pr_auc": 0.8767515314454594,
+      "roc_auc": 0.9956337808967302,
+      "confusion_matrix": {
+        "tn": 14800,
+        "fp": 565,
+        "fn": 6,
+        "tp": 178
+      },
+      "fraud_amount_recall": 0.9683007860679393
+    }
+  },
+  "libs": {
+    "sklearn": "1.8.0",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.2"
+  },
+  "release_gate": {
+    "min_test_pr_auc": 0.6,
+    "min_test_recall": 0.6,
+    "min_test_precision": 0.5,
+    "must_beat_baseline_pr_auc": true
+  },
+  "rollback_to": "fraud-rules-v0 (existing rule engine) or previous model version in registry"
+}

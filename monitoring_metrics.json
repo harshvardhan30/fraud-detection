@@ -1,0 +1,425 @@
+{
+  "data_drift": {
+    "2026-06 (baseline)": {
+      "amount (PSI, all rows)": 0.00016687469702865695,
+      "amount (PSI, clean rows)": 0.00016687469702865695,
+      "amount (KS stat, clean)": 0.004548914513245544,
+      "service_type": 1.628379397754472e-05,
+      "merchant_type": 0.00033128236779978647,
+      "mcc_code": 0.0013275268336735329,
+      "hour": 0.00047916293810382416
+    },
+    "2026-07": {
+      "amount (PSI, all rows)": 0.00675966705775857,
+      "amount (PSI, clean rows)": 0.00675966705775857,
+      "amount (KS stat, clean)": 0.03765036620236106,
+      "service_type": 0.012567647919135701,
+      "merchant_type": 0.00010812140891317457,
+      "mcc_code": 0.0017198686272142702,
+      "hour": 0.0013677239994173836
+    },
+    "2026-08": {
+      "amount (PSI, all rows)": 0.021770983705459823,
+      "amount (PSI, clean rows)": 0.021770983705459823,
+      "amount (KS stat, clean)": 0.05670174687693719,
+      "service_type": 0.04941885342108503,
+      "merchant_type": 0.0013798965758695112,
+      "mcc_code": 0.02470357993265499,
+      "hour": 0.0013692499320498148
+    },
+    "2026-09": {
+      "amount (PSI, all rows)": 0.08684703330885343,
+      "amount (PSI, clean rows)": 0.04987217297319577,
+      "amount (KS stat, clean)": 0.09202305811125477,
+      "service_type": 0.11728174674793337,
+      "merchant_type": 0.006939468900641424,
+      "mcc_code": 0.0625415835237716,
+      "hour": 0.0009052798226659438
+    }
+  },
+  "feature_psi": {
+    "2026-06 (baseline)": {
+      "hour": 0.00031325494960632836,
+      "day_of_week": 0.008720513110892461,
+      "log_amount": 0.00016687469702865695,
+      "dev_age_days_cap30": 0.007511485250254413,
+      "dev_secs_since_last": 0.010087556059156101,
+      "dev_cnt_10m": 1.663809535879488e-05,
+      "dev_cnt_1h": 4.796748825372455e-05,
+      "dev_cnt_24h": 0.0006497929388413926,
+      "dev_cnt_30d": 0.008557167102585653,
+      "dev_amt_sum_1h": 8.027904331257368e-05,
+      "dev_fail_cnt_24h": 0.0,
+      "dev_amt_ratio_prior_mean": 0.002765820700982741,
+      "mer_age_days_cap30": 0.0,
+      "mer_cnt_1h": 3.988525995823044e-05,
+      "mer_cnt_7d": 0.0027167999624379646,
+      "mer_amt_ratio_prior_mean": 0.0012580024708153245
+    },
+    "2026-07": {
+      "hour": 0.0006223503296369712,
+      "day_of_week": 0.017924390891114653,
+      "log_amount": 0.00675966705775857,
+      "dev_age_days_cap30": 0.010659822606914062,
+      "dev_secs_since_last": 0.017407671846070158,
+      "dev_cnt_10m": 7.739301019267137e-05,
+      "dev_cnt_1h": 5.681010415497793e-05,
+      "dev_cnt_24h": 0.0012367166112632615,
+      "dev_cnt_30d": 0.020369792276236767,
+      "dev_amt_sum_1h": 0.00013303998726929526,
+      "dev_fail_cnt_24h": 0.0,
+      "dev_amt_ratio_prior_mean": 0.0006297142001927341,
+      "mer_age_days_cap30": 0.0,
+      "mer_cnt_1h": 5.039113128100592e-05,
+      "mer_cnt_7d": 0.0012124572129411121,
+      "mer_amt_ratio_prior_mean": 0.008560955211137384
+    },
+    "2026-08": {
+      "hour": 0.0008977154604932479,
+      "day_of_week": 0.00857034171589438,
+      "log_amount": 0.021770983705459823,
+      "dev_age_days_cap30": 0.011656126500570279,
+      "dev_secs_since_last": 0.02867125702989778,
+      "dev_cnt_10m": 1.2722118159124112e-05,
+      "dev_cnt_1h": 0.00011948488367908055,
+      "dev_cnt_24h": 0.0026309663773087105,
+      "dev_cnt_30d": 0.03609520530283607,
+      "dev_amt_sum_1h": 0.0009320040535186656,
+      "dev_fail_cnt_24h": 0.0,
+      "dev_amt_ratio_prior_mean": 0.0038191031279673393,
+      "mer_age_days_cap30": 0.0,
+      "mer_cnt_1h": 2.680570877103242e-05,
+      "mer_cnt_7d": 0.0060671641630887976,
+      "mer_amt_ratio_prior_mean": 0.02252075378541341
+    },
+    "2026-09": {
+      "hour": 0.00029162081444428857,
+      "day_of_week": 0.011703261972175822,
+      "log_amount": 0.04987217297319577,
+      "dev_age_days_cap30": 0.015980355997512127,
+      "dev_secs_since_last": 0.03110629554286175,
+      "dev_cnt_10m": 0.0002881416523830596,
+      "dev_cnt_1h": 0.0005412020638487067,
+      "dev_cnt_24h": 0.003102286045761157,
+      "dev_cnt_30d": 0.04499470030008576,
+      "dev_amt_sum_1h": 0.0017651013032857913,
+      "dev_fail_cnt_24h": 0.0,
+      "dev_amt_ratio_prior_mean": 0.004646151238736686,
+      "mer_age_days_cap30": 0.0,
+      "mer_cnt_1h": 8.15764427563319e-07,
+      "mer_cnt_7d": 0.04184956098184913,
+      "mer_amt_ratio_prior_mean": 0.013768659536737143
+    }
+  },
+  "prediction": {
+    "2026-06 (baseline)": {
+      "score_psi": 0.00018168333714025292,
+      "mean_score": 0.009252467192709446,
+      "p99_score": 0.2405838817358017,
+      "decline_rate": 0.009839861084314104,
+      "review_rate": 0.037944562351276606,
+      "actual_fraud_rate": 0.01183355842819474
+    },
+    "2026-07": {
+      "score_psi": 0.001835591563020086,
+      "mean_score": 0.009121420793235302,
+      "p99_score": 0.2292904555797577,
+      "decline_rate": 0.009900990099009901,
+      "review_rate": 0.03490412332372478,
+      "actual_fraud_rate": 0.01165559593934077
+    },
+    "2026-08": {
+      "score_psi": 0.001874311430578601,
+      "mean_score": 0.010982300154864788,
+      "p99_score": 0.5287767052650452,
+      "decline_rate": 0.012152575880916386,
+      "review_rate": 0.0393068961507152,
+      "actual_fraud_rate": 0.01971159437143854
+    },
+    "2026-09": {
+      "score_psi": 0.021073503939509967,
+      "mean_score": 0.011559054255485535,
+      "p99_score": 0.5587968230247498,
+      "decline_rate": 0.012743794326241134,
+      "review_rate": 0.0538563829787234,
+      "actual_fraud_rate": 0.02742686170212766
+    }
+  },
+  "performance": {
+    "2026-06 (baseline)": {
+      "n": 15549,
+      "n_fraud": 184,
+      "fraud_rate": 0.01183355842819474,
+      "threshold": 0.25217676162719727,
+      "precision": 0.8888888888888888,
+      "recall": 0.7391304347826086,
+      "f1": 0.8071216617210683,
+      "pr_auc": 0.8767515314454594,
+      "roc_auc": 0.9956337808967302,
+      "confusion_matrix": {
+        "tn": 15348,
+        "fp": 17,
+        "fn": 48,
+        "tp": 136
+      },
+      "fraud_amount_recall": 0.7907197241297919,
+      "quarantined_rows": 0
+    },
+    "2026-07": {
+      "n": 15958,
+      "n_fraud": 186,
+      "fraud_rate": 0.01165559593934077,
+      "threshold": 0.25217676162719727,
+      "precision": 0.8544303797468354,
+      "recall": 0.7258064516129032,
+      "f1": 0.7848837209302325,
+      "pr_auc": 0.8650153285142564,
+      "roc_auc": 0.9929857321672544,
+      "confusion_matrix": {
+        "tn": 15749,
+        "fp": 23,
+        "fn": 51,
+        "tp": 135
+      },
+      "fraud_amount_recall": 0.8326567593342067,
+      "quarantined_rows": 0
+    },
+    "2026-08": {
+      "n": 17198,
+      "n_fraud": 339,
+      "fraud_rate": 0.01971159437143854,
+      "threshold": 0.25217676162719727,
+      "precision": 0.84688995215311,
+      "recall": 0.5221238938053098,
+      "f1": 0.6459854014598541,
+      "pr_auc": 0.6569436236176666,
+      "roc_auc": 0.9488631283484168,
+      "confusion_matrix": {
+        "tn": 16827,
+        "fp": 32,
+        "fn": 162,
+        "tp": 177
+      },
+      "fraud_amount_recall": 0.683398281824098,
+      "quarantined_rows": 0
+    },
+    "2026-09": {
+      "n": 17085,
+      "n_fraud": 462,
+      "fraud_rate": 0.02704126426690079,
+      "threshold": 0.25217676162719727,
+      "precision": 0.8819875776397516,
+      "recall": 0.30735930735930733,
+      "f1": 0.45585874799357945,
+      "pr_auc": 0.41990914709875365,
+      "roc_auc": 0.8263478235053764,
+      "confusion_matrix": {
+        "tn": 16604,
+        "fp": 19,
+        "fn": 320,
+        "tp": 142
+      },
+      "fraud_amount_recall": 0.5841981121526308,
+      "quarantined_rows": 963
+    }
+  },
+  "business": {
+    "2026-06 (baseline)": {
+      "txns": 15549,
+      "approval_rate": 0.9901601389156859,
+      "false_declines": 17,
+      "false_decline_value": 653271.7100000001,
+      "fraud_value_total": 3741144.8200000003,
+      "fraud_loss_auto_approved": 118591.35,
+      "fraud_loss_rate_bps": 12.889030445014393,
+      "review_queue_per_day": 19.666666666666668,
+      "review_hit_rate": 0.0711864406779661
+    },
+    "2026-07": {
+      "txns": 15958,
+      "approval_rate": 0.9900990099009901,
+      "false_declines": 23,
+      "false_decline_value": 586413.9,
+      "fraud_value_total": 4976309.57,
+      "fraud_loss_auto_approved": 188664.88999999998,
+      "fraud_loss_rate_bps": 18.64667236347375,
+      "review_queue_per_day": 17.967741935483872,
+      "review_hit_rate": 0.0718132854578097
+    },
+    "2026-08": {
+      "txns": 17198,
+      "approval_rate": 0.9878474241190837,
+      "false_declines": 32,
+      "false_decline_value": 1420321.11,
+      "fraud_value_total": 6324889.08,
+      "fraud_loss_auto_approved": 859839.1200000001,
+      "fraud_loss_rate_bps": 72.81839054874766,
+      "review_queue_per_day": 21.806451612903224,
+      "review_hit_rate": 0.09615384615384616
+    },
+    "2026-09": {
+      "txns": 17085,
+      "approval_rate": 0.9905765291191103,
+      "false_declines": 19,
+      "false_decline_value": 1176589.2200000002,
+      "fraud_value_total": 7033553.779999999,
+      "fraud_loss_auto_approved": 2190336.13,
+      "fraud_loss_rate_bps": 170.42584731939596,
+      "review_queue_per_day": 20.9,
+      "review_hit_rate": 0.08771929824561403
+    }
+  },
+  "actions": [
+    [
+      "2026-08",
+      "Performance drift",
+      "recall 0.52 vs 0.74, PR-AUC 0.66 vs 0.88",
+      "Concept drift: slice missed fraud to find the new pattern, retrain a challenger with recent labels, shadow-test, promote if it wins; add a stop-gap rule for the new pattern meanwhile."
+    ],
+    [
+      "2026-08",
+      "Business",
+      "fraud loss 73 bps of volume (Rs 859,839) vs 13 bps baseline",
+      "Escalate to risk team; tighten threshold for affected segment until challenger is live."
+    ],
+    [
+      "2026-09",
+      "Data quality",
+      "amount within plausible range; daily median amount per service within 3x of training",
+      "Investigate data quality: open incident with the integration owner, quarantine affected rows (route to rules/fallback), exclude them from performance reporting and from any retraining set. Do NOT retrain or move thresholds because of this drift."
+    ],
+    [
+      "2026-09",
+      "Data drift",
+      "service_type PSI 0.12",
+      "Check if explained by known seasonality/product change (festive season, UPI growth); if performance is stable, document and keep monitoring; refresh reference window at next retrain."
+    ],
+    [
+      "2026-09",
+      "Performance drift",
+      "recall 0.31 vs 0.74, PR-AUC 0.42 vs 0.88",
+      "Concept drift: slice missed fraud to find the new pattern, retrain a challenger with recent labels, shadow-test, promote if it wins; add a stop-gap rule for the new pattern meanwhile."
+    ],
+    [
+      "2026-09",
+      "Business",
+      "fraud loss 170 bps of volume (Rs 2,190,336) vs 13 bps baseline",
+      "Escalate to risk team; tighten threshold for affected segment until challenger is live."
+    ]
+  ],
+  "remediation": {
+    "champion v1.0 as-is": {
+      "n": 17085,
+      "n_fraud": 462,
+      "fraud_rate": 0.02704126426690079,
+      "threshold": 0.25217676162719727,
+      "precision": 0.8819875776397516,
+      "recall": 0.30735930735930733,
+      "f1": 0.45585874799357945,
+      "pr_auc": 0.41990914709875365,
+      "roc_auc": 0.8263478235053764,
+      "confusion_matrix": {
+        "tn": 16604,
+        "fp": 19,
+        "fn": 320,
+        "tp": 142
+      },
+      "fraud_amount_recall": 0.5841981121526308
+    },
+    "champion + merchant re-tiering": {
+      "n": 17085,
+      "n_fraud": 462,
+      "fraud_rate": 0.02704126426690079,
+      "threshold": 0.25217676162719727,
+      "precision": 0.8505747126436781,
+      "recall": 0.3203463203463203,
+      "f1": 0.46540880503144655,
+      "pr_auc": 0.5488733162111021,
+      "roc_auc": 0.9592445193419747,
+      "confusion_matrix": {
+        "tn": 16597,
+        "fp": 26,
+        "fn": 314,
+        "tp": 148
+      },
+      "fraud_amount_recall": 0.5936156672139642
+    },
+    "champion + stop-gap rule": {
+      "n": 17085,
+      "n_fraud": 462,
+      "fraud_rate": 0.02704126426690079,
+      "threshold": 0.25217676162719727,
+      "precision": 0.9141414141414141,
+      "recall": 0.7835497835497836,
+      "f1": 0.8438228438228438,
+      "pr_auc": 0.8127356683305622,
+      "roc_auc": 0.9482948572011918,
+      "confusion_matrix": {
+        "tn": 16589,
+        "fp": 34,
+        "fn": 100,
+        "tp": 362
+      },
+      "fraud_amount_recall": 0.8810946363447016
+    },
+    "challenger (Feb 1-Aug 15)": {
+      "n": 17085,
+      "n_fraud": 462,
+      "fraud_rate": 0.02704126426690079,
+      "threshold": 0.23965895175933838,
+      "precision": 0.8571428571428571,
+      "recall": 0.35064935064935066,
+      "f1": 0.4976958525345622,
+      "pr_auc": 0.5273723539532348,
+      "roc_auc": 0.9430580849097363,
+      "confusion_matrix": {
+        "tn": 16596,
+        "fp": 27,
+        "fn": 300,
+        "tp": 162
+      },
+      "fraud_amount_recall": 0.6216954781001192
+    },
+    "challenger, recent months x3 weight": {
+      "n": 17085,
+      "n_fraud": 462,
+      "fraud_rate": 0.02704126426690079,
+      "threshold": 0.11502177268266678,
+      "precision": 0.7678571428571429,
+      "recall": 0.3722943722943723,
+      "f1": 0.5014577259475219,
+      "pr_auc": 0.5298424660659627,
+      "roc_auc": 0.9417771965146085,
+      "confusion_matrix": {
+        "tn": 16571,
+        "fp": 52,
+        "fn": 290,
+        "tp": 172
+      },
+      "fraud_amount_recall": 0.6437121207310937
+    },
+    "challenger + stop-gap rule": {
+      "n": 17085,
+      "n_fraud": 462,
+      "fraud_rate": 0.02704126426690079,
+      "threshold": 0.23965895175933838,
+      "precision": 0.8995215311004785,
+      "recall": 0.8138528138528138,
+      "f1": 0.8545454545454545,
+      "pr_auc": 0.8278846204004946,
+      "roc_auc": 0.9762744624682903,
+      "confusion_matrix": {
+        "tn": 16581,
+        "fp": 42,
+        "fn": 86,
+        "tp": 376
+      },
+      "fraud_amount_recall": 0.9107411275100822
+    }
+  },
+  "stop_gap_rule": {
+    "flagged": 235,
+    "per_day": 7.833333333333333,
+    "precision": 0.9361702127659575
+  }
+}

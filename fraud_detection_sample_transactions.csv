@@ -1,0 +1,13 @@
+request_id,request_time,service_type,device_id,merchant_id,merchant_state,merchant_city,merchant_type,mcc_code,mcc_title,issuer_bank,currency_code,amount,request_status,fraud_label
+TXN100001,2026-01-03 09:14:02,upi,DEV1001,M100101,Maharashtra,Mumbai,low,5411,Grocery Stores,ICICI,INR,850.0,SUCCESS,0
+TXN100002,2026-01-03 09:18:11,wallet,DEV1002,M100202,Delhi,New Delhi,high,6540,Prepaid/Stored Value Card Load,NOT_APPLICABLE,INR,78500.0,FAILED,1
+TXN100003,2026-01-03 10:05:40,netbanking,DEV1003,M100303,Karnataka,Bengaluru,low,5311,Department Stores,HDFC,INR,2450.5,SUCCESS,0
+TXN100004,2026-01-03 10:06:15,netbanking,DEV1003,M100303,Karnataka,Bengaluru,low,5311,Department Stores,HDFC,INR,2590.0,SUCCESS,0
+TXN100005,2026-01-03 10:07:08,netbanking,DEV1003,M100303,Karnataka,Bengaluru,low,5311,Department Stores,HDFC,INR,74000.0,SUCCESS,1
+TXN100006,2026-01-03 12:30:45,imps,DEV1004,M100404,Tamil Nadu,Chennai,low,8299,Educational Services,INDUSIND,INR,12000.0,SUCCESS,0
+TXN100007,2026-01-03 23:48:12,wallet,DEV1005,M100505,Odisha,Bhubaneswar,high,7273,Dating and Escort Services,NOT_APPLICABLE,INR,43200.0,FAILED,1
+TXN100008,2026-01-04 00:03:21,upi,DEV1006,M100606,Rajasthan,Jaipur,medium,5732,Electronic Stores,SBI,INR,39999.0,DECLINED,0
+TXN100009,2026-01-04 08:12:09,upi,DEV1001,M100101,Maharashtra,Mumbai,low,5411,Grocery Stores,ICICI,INR,950.0,SUCCESS,0
+TXN100010,2026-01-04 02:15:36,netbanking,DEV1007,M100707,Uttar Pradesh,Lucknow,high,6540,Prepaid/Stored Value Card Load,BOB,INR,92000.0,SUCCESS,1
+TXN100011,2026-01-04 14:45:00,imps,DEV1008,M100808,Maharashtra,Pune,low,5941,Sporting Goods Stores,HDFC,INR,6750.0,SUCCESS,0
+TXN100012,2026-01-04 14:46:08,imps,DEV1008,M100808,Maharashtra,Pune,low,5941,Sporting Goods Stores,HDFC,INR,6900.0,SUCCESS,0
